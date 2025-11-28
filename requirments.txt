@@ -1,0 +1,6 @@
+flask
+pandas
+pdfplumber
+pymupdf
+requests
+urllib3
