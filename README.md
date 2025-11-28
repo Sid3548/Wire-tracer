@@ -55,20 +55,7 @@ While the core logic and system design are mine, the code reflects a collaborati
     ```bash
     python app.py
     ```
-
-4.  **Start Tracing**
-    * Open your browser to `http://127.0.0.1:5000`.
-    * **PDF Path:** Enter the local file path to your schematic (e.g., `C:/Drawings/schematic.pdf`) or drag and drop the file.
-    * **API Key:** Enter your Google Gemini API Key.
-    * **Tokens:** Enter the starting label (e.g., `XC`) and ending label (e.g., `XIF`) you want to trace between.
-    * Click **Trace Wires**.
-
-## Future Roadmap
-
-*  Add support for multi-page tracing.
-*  Improve error handling for low-quality scans.
-*  Dockerize the application for easier deployment.
-*  Store history of traced connections in a local database.
+PS. it is made on a notion that your pdf's are Vector pdf's and not imaged ones so please see to that while using.I do have another methord to read just via images the accuracy i have achieved is around 85-90% but this work does need manual check due to various factors which will make this rant go for too long!!
 
 ---
 *Created by Siddharth J - 2025*
