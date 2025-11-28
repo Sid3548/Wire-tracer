@@ -4,14 +4,14 @@
 
 ![Project Status](https://img.shields.io/badge/Status-Prototype-orange) ![Python](https://img.shields.io/badge/Python-3.10%2B-blue) ![AI](https://img.shields.io/badge/Powered%20by-Gemini%202.0-8E75B2)
 
-## 📖 About the Project
+## About the Project
 
 Electrical engineers often spend hours manually tracing lines on PDF schematics to verify logic (e.g., "Does this wire go to the correct alarm contact?"). This tool attempts to solve that by:
 1.  **Extracting Text:** Using `pdfplumber` to find label coordinates.
 2.  **Visual Tracing:** Sending the specific coordinates and a simplified image to a Multimodal LLM (Gemini) to visually trace the black line connecting them.
 3.  **Context Extraction:** Reading the descriptive text near the wire (e.g., "GCB OPEN" or "LOW GAS PRESSURE").
 
-## 🤖 A Note on Development & AI Assistance
+## A Note on Development & AI Assistance
 
 **This project is a personal learning initiative.** I am currently learning Python and full-stack development. To bridge the gap between my engineering logic and the implementation code, I utilized AI coding assistants (LLMs) heavily during development. 
 
@@ -22,7 +22,7 @@ The AI acted as a "pair programmer," helping me:
 
 While the core logic and system design are mine, the code reflects a collaborative effort between a learning developer and modern AI tools. Feedback on code quality and structure is always welcome!
 
-## ✨ Key Features
+## Key Features
 
 * **Hybrid Pipeline:** Uses standard Python libraries for text precision and AI for visual line tracing.
 * **Vector Text Processing:** Automatically flips reversed text (common in schematics) and merges split labels (e.g., "X" + "01" becomes "X01").
@@ -30,14 +30,14 @@ While the core logic and system design are mine, the code reflects a collaborati
 * **Visual Preview:** Zoomable preview of the schematic page.
 * **Data Export:** Export traced connections to CSV for documentation.
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 * **Backend:** Python, Flask
 * **Frontend:** HTML5, CSS3, Vanilla JavaScript
 * **PDF Processing:** `pdfplumber` (text extraction), `PyMuPDF/fitz` (image rendering)
 * **AI Model:** Google Gemini 2.0 Flash / Flash-Lite (via Google Generative AI SDK)
 
-## 🚀 Installation & Usage
+## Installation & Usage
 
 1.  **Clone the Repository**
     ```bash
@@ -63,12 +63,12 @@ While the core logic and system design are mine, the code reflects a collaborati
     * **Tokens:** Enter the starting label (e.g., `XC`) and ending label (e.g., `XIF`) you want to trace between.
     * Click **Trace Wires**.
 
-## 🔮 Future Roadmap
+## Future Roadmap
 
-* [ ] Add support for multi-page tracing.
-* [ ] Improve error handling for low-quality scans.
-* [ ] Dockerize the application for easier deployment.
-* [ ] Store history of traced connections in a local database.
+*  Add support for multi-page tracing.
+*  Improve error handling for low-quality scans.
+*  Dockerize the application for easier deployment.
+*  Store history of traced connections in a local database.
 
 ---
-*Created by [Your Name] - 2025*
+*Created by Siddharth J - 2025*
