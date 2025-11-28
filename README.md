@@ -1,4 +1,4 @@
-# Wire Tracer: Hybrid Schematic Analysis Tool
+# Wire Tracer: Traces wires in electrical cad drawings when they are image or pdf formed
 
 **Wire Tracer** is a web-based application designed to automate the tedious process of verifying electrical connections in PDF schematics. By combining deterministic vector data extraction with the visual reasoning capabilities of Google's Gemini 2.0 Flash, this tool can "see" and "read" engineering drawings to trace wires from source to destination.
 
